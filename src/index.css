@@ -15,7 +15,7 @@
 
 .hash-span {
   margin-top: -100px;
-  padding-bottom: 100px;
+  padding-bottom: 100px; 
   display: block;
 }
 
@@ -42,6 +42,31 @@
     rgba(19, 72, 5, 0) 100%
   );
 }
+
+.sisnovate-color1{
+  background: #007350;
+  background: linear-gradient(-90deg, #007350 0%, rgba(6, 97, 74, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #007350 0%,
+    #007350 100%
+  );
+
+}
+
+
+.sisnovate-color2{
+  background: #022348;
+  background: linear-gradient(-90deg, #007350 0%, rgba(6, 97, 74, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #022348 0%,
+    #022348 100%
+  );
+
+}
+
+
 
 .green-pink-gradient {
   background: "#00cea8";

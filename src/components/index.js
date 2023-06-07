@@ -13,7 +13,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
-
+import ChooseUs from "./chooseus";
 export {
   Hero,
   Navbar,
@@ -23,6 +23,7 @@ export {
   Works,
   Feedbacks,
   Contact,
+  ChooseUs,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,

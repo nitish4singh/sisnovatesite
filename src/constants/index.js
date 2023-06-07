@@ -42,19 +42,35 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Web And Application Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "AI Solution",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Data Engineering",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "StartUp Suport",
+    icon: creator,
+  },
+  {
+    title: "Healthcare Solution",
+    icon: web,
+  },
+  {
+    title: "EdTech solution",
+    icon: mobile,
+  },
+  {
+    title: "Cloud Solutions",
+    icon: backend,
+  },
+  {
+    title: "NGo/InGO  support",
     icon: creator,
   },
 ];
@@ -116,74 +132,96 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Investigate",
+    company_name: "",
     icon: starbucks,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      " Discovery Problem",
+      "Process you idea.",
+      "Question & Answer.",
+      "Market Research.",
+      " Goal Setting.",
+      "Product Blueprint.",
+      "Legal Aggrement.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Design",
+    company_name: "",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    points: ["UI/UX.", "Present your product Prototypes.", "Brand Identity."],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: " Development ",
+    company_name: "",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Web Development.",
+      "Mobile Development.",
+      " AI & ML intregation",
+      " Algorithm intregation.",
+      " Database management.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Launch",
+    company_name: "",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      " Cloud Operations.",
+      " Data Operations.",
+      "Security",
+      " Monitoring and Deployment",
+      " Quality Assurance.",
     ],
+  },
+  {
+    title: "Scale",
+    company_name: "",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: [
+      "Product Analytics.",
+      " Business Intelligence.",
+      "Continuous Integration",
+      " Automation",
+    ],
+  },
+  {
+    title: "Support",
+    company_name: "",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: ["1 yrs free Support.", "24/7 support.", "Maintanance"],
   },
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Sisnovate took the time to understand our needs and delivered a high-quality design that was better than expected,  within Time & budget. As the founder of Homeplex, I would highly recommend Sisnovate services.",
+    name: "Predeep sth",
+    designation: "Founder",
+    company: "Homeplex",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Sisnovate team has ability to deliver a high-quality website ,they  create my website within a week & budgets.Their commitment to providing excellent service and support is truly impressive, that bring me in  no doubt that they will continue to exceed expectations for their clients in the future.",
+
+    name: "Pawan shah",
+    designation: "CEO",
+    company: "Buddha Notes",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {

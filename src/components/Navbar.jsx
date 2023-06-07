@@ -29,7 +29,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-2 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+        scrolled ? "sisnovate-color2" : "sisnovate-color2"
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -42,8 +42,8 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-           Sisnovate INC &nbsp;
+          <p className="text-white text-[20px] font-bold cursor-pointer flex ">
+            Sisnovate INC &nbsp;
             <span className="sm:block hidden"> </span>
           </p>
         </Link>
@@ -53,8 +53,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-blue" : "text-secondary"
-              } hover:text-black text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "text-white" : "text-white"
+              } hover:text-white text-[20px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -73,14 +73,14 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 sisnovate-color1 absolute top-20 right-0 mx-3 my-2 min-w-[130px] z-15 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.title ? "text-white" : "text-white"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
