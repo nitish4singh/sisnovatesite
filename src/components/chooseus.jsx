@@ -1,90 +1,67 @@
-import LineGradient from "../components/canvas/LineGradient";
+import { features } from "../constants/index";
+import { layout, styles1 } from "../styles";
+import Button from "./Button";
+import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
+import { textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 
-const ChooseUs = () => {
+const FeatureCard = ({ icon, title, content, index }) => {
   return (
-    <section id="chooseus" className="pt-32 pb-16">
-      {/* HEADING */}
-      <motion.div
-        className="md:w-1/3 text-center md:text-left"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, x: -50 },
-          visible: { opacity: 1, x: 0 },
-        }}
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <div
+        className={`flex flex-row p-6 rounded-[20px] ${
+          index !== features.length - 1 ? "mb-6" : "mb-0"
+        } feature-card sisnovate-color1`}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
-          ChooseUs
-        </p>
-        <LineGradient width="mx-auto w-2/5" />
-        <p className="mt-10">
-          Here's What People are Saying About My Work. Aliquam aliquet integer
-          ut fames odio in at. At magna ornare dictum lectus.
-        </p>
-      </motion.div>
-
-      {/* TESTIMONIALS */}
-      <div className="md:flex md:justify-between gap-8">
-        <motion.div
-          className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person1"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.6 }}
-          variants={{
-            hidden: { opacity: 0, scale: 0.8 },
-            visible: { opacity: 1, scale: 1 },
-          }}
+        <div
+          className={`w-[64px] h-[64px] rounded-full ${styles1.flexCenter} sisnovate-color1`}
         >
-          <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+          <img
+            src={icon}
+            alt="star"
+            className="w-[50%] h-[50%] object-contain"
+          />
+        </div>
+        <div className="flex-1 flex flex-col ml-3">
+          <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
+            {title}
+          </h4>
+          <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
+            {content}
           </p>
-        </motion.div>
-
-        <motion.div
-          className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          variants={{
-            hidden: { opacity: 0, scale: 0.8 },
-            visible: { opacity: 1, scale: 1 },
-          }}
-        >
-          <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
-          </p>
-        </motion.div>
-
-        <motion.div
-          className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-          variants={{
-            hidden: { opacity: 0, scale: 0.8 },
-            visible: { opacity: 1, scale: 1 },
-          }}
-        >
-          <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
-          </p>
-        </motion.div>
+        </div>
       </div>
-    </section>
+    </motion.div>
   );
 };
+const ChooseUs = () => {
+  return (
+    <>
+      <section id="features" className={layout.section}>
+        <motion.div variants={textVariant()}>
+          <div className={layout.sectionInfo}>
+            <h2 className={styles1.heading2}>
+              Give Your Business Idea, <br className="sm:block hidden" />
+              we transform into Digital
+            </h2>
+            <p className={`${styles1.paragraph} max-w-[440px] mt-4`}>
+              Sisnovate has a team that deals with the new technology ,
+              Understand your business,analys your business then decides which
+              technology will fit to enhance your traditional business into
+              Digital business.
+            </p>
 
-export default ChooseUs;
+          </div>
+        </motion.div>
+
+        <div className={`${layout.sectionImg} flex-col`}>
+          {features.map((feature, index) => (
+            <FeatureCard key={feature.id} {...feature} index={index} />
+          ))}
+        </div>
+      </section>
+    </>
+  );
+};
+export default SectionWrapper(ChooseUs, "");

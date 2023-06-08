@@ -11,27 +11,34 @@ import {
   Works,
   StarsCanvas,
   ChooseUs,
+  SubscriptionService,
+  WebAppProduct,
 } from "./components";
 
+import Header from "./Hero/header";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
+      <Navbar />
 
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <ChooseUs/>
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
+      <Header />
+
+      <ChooseUs />
+
+      <SubscriptionService />
+      <WebAppProduct />
+      <div className="relative z-0">
+        <About />
+        <StarsCanvas />
+
+        <Experience />
+      </div>
+      <Tech />
+      <Works />
+      <Feedbacks />
+      <div className="relative z-0">
+        <Contact />
+        <StarsCanvas />
       </div>
     </BrowserRouter>
   );

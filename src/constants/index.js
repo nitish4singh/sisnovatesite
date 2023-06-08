@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  send,
+  star,
+  shield,
 } from "../assets";
 
 export const navLinks = [
@@ -42,7 +45,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web And Application Development",
+    title: "Web Development",
+    icon: web,
+  },
+  {
+    title: "App Development",
     icon: web,
   },
   {
@@ -72,6 +79,14 @@ const services = [
   {
     title: "NGo/InGO  support",
     icon: creator,
+  },
+  {
+    title: "Digital Marketing",
+    icon: web,
+  },
+  {
+    title: "Graphic Design",
+    icon: web,
   },
 ];
 
@@ -127,6 +142,52 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
+  },
+];
+
+const stats = [
+  {
+    id: "stats-1",
+    title: "User Active",
+    value: "3800+",
+  },
+  {
+    id: "stats-2",
+    title: "Trusted by Company",
+    value: "230+",
+  },
+  {
+    id: "stats-3",
+    title: "Transaction",
+    value: "$230M+",
+  },
+];
+
+const features = [
+  {
+    id: "feature-1",
+    icon: star,
+    title: "Trust",
+    content: "Trust Start with Trust & End with Trust",
+  },
+  {
+    id: "feature-2",
+    icon: shield,
+    title: "100% Secured",
+    content: "We take proactive steps to make sure your System are Secure.",
+  },
+  {
+    id: "feature-3",
+    icon: send,
+    title: "Innovative and scalable solutions",
+    content: "We Belive & Apply New technology in your product ",
+  },
+  {
+    id: "feature-4",
+    icon: send,
+    title: "Experience Design",
+    content:
+      "Sisnovate Focus on User-friendly design,that makes Extra Exprience  ",
   },
 ];
 
@@ -300,4 +361,12 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  features,
+  stats,
+};

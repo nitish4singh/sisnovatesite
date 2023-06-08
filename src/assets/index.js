@@ -20,7 +20,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import star from "./star.svg";
+import shield from "./shield.svg";
+import send from "./send.svg";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -59,4 +61,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  star,send,
+  shield
 };

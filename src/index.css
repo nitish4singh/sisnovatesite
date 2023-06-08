@@ -14,11 +14,18 @@
 }
 
 .hash-span {
-  margin-top: -100px;
-  padding-bottom: 100px; 
+  margin-top: 10px;
+  padding-bottom: 10px; 
   display: block;
 }
-
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1;
+   font-size: 24px;
+   font-weight: bold;
+}
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(

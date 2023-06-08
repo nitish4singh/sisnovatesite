@@ -14,6 +14,8 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import ChooseUs from "./chooseus";
+import  SubscriptionService from "./SubscriptionSection";
+import WebAppProduct from "./sisnovateWebAppProduct";
 export {
   Hero,
   Navbar,
@@ -29,4 +31,6 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  SubscriptionService,
+  WebAppProduct,
 };
